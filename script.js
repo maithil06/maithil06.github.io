@@ -51,7 +51,7 @@ var confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
 
  let p = document.createElement("p");
- p.innerText = "Congrats you made the right choice 🎉 \nDM me the time and venue 😉";
+ p.innerText = "Lets go for a dinner in Rose & Crowns 🎉 \nDM me the time 😉";
   p.style.fontSize = "2rem";
   p.style.fontWeight = "bold";
   p.style.textAlign = "center";
