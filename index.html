@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Maithil Tandel</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn">Visit Github</button>
+    </header>
+    
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="image.png" alt="Maithil Tandel">
+
+            <div class="info-box">
+
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Maithil Tandel</h1>
+                    <span>Machine Learning Engineer</span>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>  
+
+            </div>
+        </div>    
+    </section>
+    
+    <section id="experience" class="experience">
+
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="experience-info">
+            
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Machine Learning Engineer</span>
+                    <h3>EXCELER8 MOTORSPORT</h3>
+                    <p>Leveraged Transformer and Autoencoder architectures to forecast lap times with 95%+ accuracy and reduce storage by 70%, while optimizing vehicle parameters through latent feature analysis. Engineered robust data pipelines using MICE and K-means clustering to process complex telemetry, translating raw sensor data into actionable race strategies</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Machine Learning Engineer</span>
+                    <h3>Kennametal Inc</h3>
+                    <p>Developed Deep Learning and DOE-based predictive systems to automate quality control, achieving 93% accuracy across 1,000+ daily inspections. Built scalable data infrastructure and automated pipelines to support cross-functional R&D, validating hypotheses and slashing model deployment timelines</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Deep Learning Engineer</span>
+                    <h3>Resolute.AI</h3>
+                    <p>Reduced financial crime by 20% and false positives by 15% by developing high-volume anomaly detection and BERT-based NLP systems serving 500K+ daily transactions. Engineered end-to-end solutions for fraud scoring and document verification, achieving 89% F1-scores and optimizing portfolio performance via A/B testing on AWS</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Computer Vision Research Engineer</span>
+                    <h3>Smaaash</h3>
+                    <p>Built an interactive competitive dance game featuring real-time joint detection and precise motion matching algorithms. Optimized the end-to-end vision pipeline to reduce inference time by 40%, delivering a smooth user experience and laying the groundwork for AR/VR scaling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="project1.png" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">Source Code</a>
+            </div>
+
+            <div class="project-card">
+                <video src="project2.mp4" muted loop></video>
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">Source Code</a>
+            </div>
+
+            <div class="project-card">
+                <video src="project3.mp4" muted loop></video>
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">Source Code</a>
+            </div>
+
+            <div class="project-card">
+                <video src="project4.mp4" muted loop></video>
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">Source Code</a>
+            </div>
+        </div>
+    </section> 
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+
+            <h2 class="section-title">Contact Me</h2>
+
+            <form action="#" method="post">
+                <div class="input">
+                    <input type="email" name="email" placeholder="maithiltandel6@gmail.com" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>   
+    
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            
+            <li>
+                <a href="#contact">Contact</a>
+            </li>    
+        </ul>
+
+        <p class="copyright">© 2025 Maithil Tandel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
