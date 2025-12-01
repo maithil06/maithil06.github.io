@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Maithil Tandel</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn">Visit Github</button>
+    </header>
+    
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="image.png" alt="Maithil Tandel">
+
+            <div class="info-box">
+
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Maithil Tandel</h1>
+                    <span>Machine Learning Engineer</span>
+                </div>
+
+                <div class="tech-icons">
+                    <i class="devicon-python-plain colored" title="Python"></i>
+                    <i class="devicon-tensorflow-original colored" title="TensorFlow"></i>
+                    <i class="devicon-pytorch-original colored" title="PyTorch"></i>
+                    <i class="devicon-amazonwebservices-plain-wordmark colored" title="AWS"></i>
+                    <i class="devicon-git-plain colored" title="Git"></i>
+                    <i class="fa-solid fa-chart-line" title="Power BI" style="color: #F2C811;"></i>
+                    <i class="fa-solid fa-database" title="Big Data" style="color: #4285F4;"></i>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>  
+
+            </div>
+        </div>    
+    </section>
+    
+    <section id="experience" class="experience">
+
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="experience-info">
+            
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Machine Learning Engineer</span>
+                    <h3>EXCELER8 MOTORSPORT</h3>
+                    <p>Leveraged Transformer and Autoencoder architectures to forecast lap times with 95%+ accuracy and reduce storage by 70%, while optimizing vehicle parameters through latent feature analysis. Engineered robust data pipelines using MICE and K-means clustering to process complex telemetry, translating raw sensor data into actionable race strategies</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Machine Learning Engineer</span>
+                    <h3>Kennametal Inc</h3>
+                    <p>Developed Deep Learning and DOE-based predictive systems to automate quality control, achieving 93% accuracy across 1,000+ daily inspections. Built scalable data infrastructure and automated pipelines to support cross-functional R&D, validating hypotheses and slashing model deployment timelines</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Deep Learning Engineer</span>
+                    <h3>Resolute.AI</h3>
+                    <p>Reduced financial crime by 20% and false positives by 15% by developing high-volume anomaly detection and BERT-based NLP systems serving 500K+ daily transactions. Engineered end-to-end solutions for fraud scoring and document verification, achieving 89% F1-scores and optimizing portfolio performance via A/B testing on AWS</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Computer Vision Research Engineer</span>
+                    <h3>Smaaash</h3>
+                    <p>Built an interactive competitive dance game featuring real-time joint detection and precise motion matching algorithms. Optimized the end-to-end vision pipeline to reduce inference time by 40%, delivering a smooth user experience and laying the groundwork for AR/VR scaling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="project1.png" alt="Project 1">
+                <div class="project-skills">
+                    <span class="skill-tag">Gradio</span>
+                    <span class="skill-tag">Claude AI</span>
+                    <span class="skill-tag">Yahoo Finance</span>
+                </div>
+                <h3>AI Finance Agent</h3>
+                <p>This is a multi-agent AI portfolio sentiment analyzer that evaluates stocks using real-time market data and verified news sources. It's built with Gradio for the interface, uses Claude Sonnet 4 (via the Agno framework) to power two specialized AI agents, and pulls financial data from Yahoo Finance. The system filters out social media noise and only analyzes credible sources like Bloomberg and Reuters to generate sentiment scores from -100 to +100 for your portfolio</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <video src="project2.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">FAISS</span>
+                    <span class="skill-tag">K-means</span>
+                </div>
+                <h3>Wardrobe Fashion Comparer</h3>
+                <p>This is an AI-powered wardrobe assistant that matches your clothes to current fashion trends by analyzing photos you take. It uses computer vision to create image embeddings, stores them in FAISS for lightning-fast similarity search, and applies K-means clustering to group similar fashion styles together. The system compares your clothing items against trending styles in the market using vector similarity, giving you a match score so you know how close your wardrobe is to what's popular right now</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <video src="project3.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">FAISS</span>
+                    <span class="skill-tag">Embeddings</span>
+                </div>
+                <h3>Search Grocceries with Ingredients</h3>
+                <p>This is a grocery search engine that lets you find products by their specific ingredients using natural language queries. It creates text embeddings from ingredient lists and product descriptions, stores them in FAISS for super-fast vector search, and matches your ingredient requirements against thousands of grocery items in milliseconds. Built to handle queries like "find snacks without nuts and dairy" or "pasta with whole wheat and low sodium" by computing semantic similarity between your search and actual product ingredients</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <video src="project4.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">YOLOv8</span>
+                    <span class="skill-tag">OCR</span>
+                    <span class="skill-tag">OpenCV</span>
+                </div>
+                <h3>Traffic Rules Violator Detector</h3>
+                <p>This is a real-time traffic violation detection system that monitors drivers and riders for safety compliance using YOLOv8 object detection. It automatically identifies people not wearing seatbelts or helmets, captures their vehicle's license plate using OCR, and saves image evidence of the violation with timestamps. The system processes live camera feeds or video footage to flag violations instantly, creating a complete record with the offender's plate number and photographic proof for enforcement purposes</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all-container">
+            <a href="projects.html" class="btn view-all-btn">View All Projects</a>
+        </div>
+    </section> 
+
+    <section id="technologies" class="technologies">
+    <h2 class="section-title">Technologies I Use</h2>
+    <p class="section-subtitle">Tools and frameworks that power my projects</p>
+
+    <div class="tech-grid">
+        <!-- Programming + Frameworks & Libraries -->
+        <div class="tech-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming, Frameworks & Libraries</h3>
+            <div class="tech-tags">
+                <!-- Programming & Scripting -->
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">R</span>
+                <span class="tech-tag">MATLAB</span>
+                <span class="tech-tag">C++</span>
+                <!-- Frameworks & Libraries -->
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Databricks</span>
+                <span class="tech-tag">Pyspark</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">NLTK</span>
+                <span class="tech-tag">SpaCy</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">API Development & Integration</span>
+            </div>
+        </div>
+
+        <!-- Machine Learning & AI (unchanged) -->
+        <div class="tech-card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Machine Learning & AI</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">Neural Networks</span>
+                <span class="tech-tag">Machine Learning Algorithms</span>
+                <span class="tech-tag">Predictive Modelling</span>
+                <span class="tech-tag">Generative AI</span>
+                <span class="tech-tag">Natural Language Processing (NLP)</span>
+                <span class="tech-tag">Semantic Search</span>
+                <span class="tech-tag">Hugging Face</span>
+                <span class="tech-tag">Claude Sonnet</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">Retrieval Augmented Generation (RAG)</span>
+                <span class="tech-tag">Large Language Models (LLM)</span>
+                <span class="tech-tag">Transformers</span>
+                <span class="tech-tag">Time Series Forecasting</span>
+            </div>
+        </div>
+
+        <!-- Data Engineering & Analysis (unchanged) -->
+        <div class="tech-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Data Engineering & Analysis</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">Data Pipeline Development</span>
+                <span class="tech-tag">Data Processing</span>
+                <span class="tech-tag">Exploratory Data Analysis</span>
+                <span class="tech-tag">Data Wrangling</span>
+                <span class="tech-tag">Feature Engineering</span>
+                <span class="tech-tag">Data Warehousing</span>
+                <span class="tech-tag">Snowflake</span>
+                <span class="tech-tag">Apache Spark</span>
+                <span class="tech-tag">Apache Airflow</span>
+                <span class="tech-tag">Feature Store</span>
+                <span class="tech-tag">GCP Vertex AI Feature Store</span>
+                <span class="tech-tag">BigQuery (BQ)</span>
+                <span class="tech-tag">Big Data</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Numpy</span>
+            </div>
+        </div>
+
+        <!-- Project Management + Cloud & DevOps -->
+        <div class="tech-card">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Project Management, Cloud & DevOps</h3>
+            <div class="tech-tags">
+                <!-- Cloud & DevOps -->
+                <span class="tech-tag">Azure Cloud Practitioner</span>
+                <span class="tech-tag">Google Cloud Platform (GCP)</span>
+                <span class="tech-tag">GCP Vertex AI</span>
+                <span class="tech-tag">AWS Lambda</span>
+                <span class="tech-tag">AWS SageMaker</span>
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">Cloud Deployment</span>
+                <span class="tech-tag">Cursor</span>
+                <span class="tech-tag">MLOps</span>
+                <span class="tech-tag">Databricks</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Kubernetes</span>
+            
+                <!-- Project Management -->
+                <span class="tech-tag">Agile</span>
+                <span class="tech-tag">Waterfall</span>
+                <span class="tech-tag">Sprint Planning</span>
+                <span class="tech-tag">Iterative Development</span>
+                <span class="tech-tag">Notion</span>
+                <span class="tech-tag">JIRA</span>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+
+            <h2 class="section-title">Contact Me</h2>
+
+            <form action="#" method="post">
+                <div class="input">
+                    <input type="email" name="email" placeholder="maithiltandel6@gmail.com" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>   
+    
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            
+            <li>
+                <a href="#technologies">Technologies</a>
+            </li>
+            
+            <li>
+                <a href="#contact">Contact</a>
+            </li>    
+        </ul>
+
+        <p class="copyright">© 2025 Maithil Tandel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
