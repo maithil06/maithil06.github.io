@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - Maithil Tandel</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <style>
+        .projects-page {
+            min-height: 100vh;
+            padding: 10rem 12% 5rem;
+        }
+
+        .back-btn-container {
+            margin-bottom: 2rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            transition: 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        .projects-page .section-title {
+            margin-bottom: 1rem;
+        }
+
+        .projects-page .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 4rem;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            border: 2px solid black;
+            background: white;
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.2s ease-in-out;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: black;
+            color: white;
+        }
+
+        @media(max-width:768px){
+            .projects-page {
+                padding: 8rem 5% 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><span>Maithil Tandel</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#technologies">Technologies</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn" onclick="window.open('https://github.com/yourusername', '_blank')">Visit Github</button>
+    </header>
+    
+    <section class="projects-page">
+        <div class="back-btn-container">
+            <a href="index.html#projects" class="btn back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
+
+        <h2 class="section-title">All Projects</h2>
+        <p class="section-subtitle">Explore my complete portfolio of machine learning and AI projects</p>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ai">AI & ML</button>
+            <button class="filter-btn" data-filter="cv">Computer Vision</button>
+            <button class="filter-btn" data-filter="nlp">NLP</button>
+            <button class="filter-btn" data-filter="data">Data Engineering</button>
+        </div>
+
+        <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card" data-category="ai nlp">
+                <img src="project1.png" alt="AI Finance Agent">
+                <div class="project-skills">
+                    <span class="skill-tag">Gradio</span>
+                    <span class="skill-tag">Claude AI</span>
+                    <span class="skill-tag">Yahoo Finance</span>
+                </div>
+                <h3>AI Finance Agent</h3>
+                <p>This is a multi-agent AI portfolio sentiment analyzer that evaluates stocks using real-time market data and verified news sources. It's built with Gradio for the interface, uses Claude Sonnet 4 (via the Agno framework) to power two specialized AI agents, and pulls financial data from Yahoo Finance. The system filters out social media noise and only analyzes credible sources like Bloomberg and Reuters to generate sentiment scores from -100 to +100 for your portfolio</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="cv ai">
+                <video src="project2.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">FAISS</span>
+                    <span class="skill-tag">K-means</span>
+                </div>
+                <h3>Wardrobe Fashion Comparer</h3>
+                <p>This is an AI-powered wardrobe assistant that matches your clothes to current fashion trends by analyzing photos you take. It uses computer vision to create image embeddings, stores them in FAISS for lightning-fast similarity search, and applies K-means clustering to group similar fashion styles together. The system compares your clothing items against trending styles in the market using vector similarity, giving you a match score so you know how close your wardrobe is to what's popular right now</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="nlp ai">
+                <video src="project3.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">FAISS</span>
+                    <span class="skill-tag">Embeddings</span>
+                </div>
+                <h3>Search Groceries with Ingredients</h3>
+                <p>This is a grocery search engine that lets you find products by their specific ingredients using natural language queries. It creates text embeddings from ingredient lists and product descriptions, stores them in FAISS for super-fast vector search, and matches your ingredient requirements against thousands of grocery items in milliseconds. Built to handle queries like "find snacks without nuts and dairy" or "pasta with whole wheat and low sodium" by computing semantic similarity between your search and actual product ingredients</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="cv ai">
+                <video src="project4.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">YOLOv8</span>
+                    <span class="skill-tag">OCR</span>
+                    <span class="skill-tag">OpenCV</span>
+                </div>
+                <h3>Traffic Rules Violator Detector</h3>
+                <p>This is a real-time traffic violation detection system that monitors drivers and riders for safety compliance using YOLOv8 object detection. It automatically identifies people not wearing seatbelts or helmets, captures their vehicle's license plate using OCR, and saves image evidence of the violation with timestamps. The system processes live camera feeds or video footage to flag violations instantly, creating a complete record with the offender's plate number and photographic proof for enforcement purposes</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 5 - Add your new projects here -->
+            <div class="project-card" data-category="cv ai">
+                <video src="project5.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">YOLOv8</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">OpenCV</span>
+                </div>
+                <h3>Football Analytics AI</h3>
+                <p>Built a production level AI system that analyzes soccer matches in real time. Their tool identifies players, distinguishes between the two teams, and tracks the ball across the field. It also captures player posture, offering useful insights for coaching, sports analysis, and live broadcasts</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" data-category="ai data">
+                <video src="project6.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Tensorflow</span>
+                    <span class="skill-tag">Hugging Face</span>
+                </div>
+                <h3>Predicting Profit Margin for Manufacturing Tools</h3>
+                <p>Created a machine learning tool to predict the gross margin percentage for manufacturing parts. The system uses AutoGluon to analyze production costs, such as raw materials and energy. It also features an interactive Gradio interface to help engineers and decision-makers make more data-driven pricing and planning decisions</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card" data-category="ai data nlp">
+                <video src="project7.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Claude API</span>
+                    <span class="skill-tag">Tensorflow</span>
+                    <span class="skill-tag">Hugging Face</span>
+                </div>
+                <h3>Credit Card Defaulter Prediction</h3>
+                <p>A developer has built an innovative full-stack AI system that predicts credit card default risk solely from a natural language sentence. An LLM first extracts structured features from the text, which are then scored by a specialized tabular deep learning model (FT-Transformer) to ensure high precision. This approach enables faster, chat-based credit scoring and real-time risk simulations for lending teams</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card" data-category="ai data">
+                <video src="project8.mov" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Tensorflow</span>
+                    <span class="skill-tag">Transfer Learning</span>
+                </div>
+                <h3>Self Driving Car</h3>
+                <p>Deployed a self-driving car system using a Raspberry Pi and deep learning. When powerful pre-trained models proved too slow for the limited hardware, a custom lightweight CNN was designed and optimized for edge performance. This solution successfully enabled the vehicle to autonomously navigate a figure-8 track and reliably stop for detected obstacles</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card" data-category="ai data nlp">
+                <video src="project9.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">TensorFlow</span>
+                </div>
+                <h3>Custom AI Support Desk Solution</h3>
+                <p>Created a high-performance machine learning system to automatically classify IT support tickets using open-source Python tools. The solution covers the entire ML lifecycle, leveraging advanced NLP and benchmarking models from classical ML to fine-tuned DistilBERT. This robust system achieved over 92% accuracy, proving to be a cost-effective classification alternative</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card" data-category="ai data nlp">
+                <video src="project10.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Claudi API</span>
+                    <span class="skill-tag">LLM</span>
+                    <span class="skill-tag">Transfer Learning</span>
+                </div>
+                <h3>MultiAgent Restaurant APP</h3>
+                <p>Deployed a Multi-Agent LLM System where multiple intelligent agents autonomously collaborate like a human team to solve complex tasks. These agents operate as planners, analysts, and coders to manage financial transactions, calculate costs, and forecast trends using a dummy dataset with seasonality. This project demonstrates the significant potential of collaborative AI for running sophisticated, real-time workflows</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card" data-category="ai data nlp">
+                <video src="project11.mp4" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">Transfer Learning</span>
+                </div>
+                <h3>Batting Posture Prediction (Injury Detection)</h3>
+                <p>A developer created a comprehensive Cricket Batting Angles Analysis system that leverages MediaPipe for real-time human pose estimation from video, specifically designing scripts to analyze and log joint angles (like elbow, knee, and hip) from a side view to a CSV file for training and testing form. To enhance analysis, the system integrates YOLO for object detection and utilizes Dynamic Time Warping ($\text{fastdtw}$) to compare and score the similarity of movement sequences, offering a robust, open-source tool for biomechanical assessment in cricket and general fitness</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 12 -->
+            <div class="project-card" data-category="ai data nlp">
+                <img src="project12.png" muted loop></video>
+                <div class="project-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Pytorch</span>
+                    <span class="skill-tag">PowerBI</span>
+                </div>
+                <h3>Football Metabolics</h3>
+                <p>A developer created a machine learning system to predict and rank Fantasy Premier League player injury risk using advanced athletic metrics. Moving beyond traditional GPS tracking, the system employs Metabolic Power Modeling to estimate the actual energy expenditure for every movement, treating player acceleration like an uphill run to quantify exertion and spot overload risk</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#technologies">Technologies</a></li>
+            <li><a href="index.html#contact">Contact</a></li>    
+        </ul>
+        <p class="copyright">© 2025 Maithil Tandel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'flex';
+                    } else {
+                        const categories = card.getAttribute('data-category');
+                        if (categories.includes(filter)) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Auto-play videos on hover
+        const videos = document.querySelectorAll('.project-card video');
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => video.play());
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    </script>
+</body>
+</html>
