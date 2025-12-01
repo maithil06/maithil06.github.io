@@ -254,7 +254,7 @@ if (isProjectsPage) {
             repo: 'https://github.com/maithil06/CreditCardDefaulters'
         },
         {
-            demo: 'project8.mov',
+            demo: 'project8.mp4',
             repo: 'https://github.com/maithil06/CAR'
         },
         {
@@ -297,4 +297,5 @@ if (isProjectsPage) {
             });
         }
     });
+
 }
