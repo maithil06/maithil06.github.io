@@ -297,5 +297,4 @@ if (isProjectsPage) {
             });
         }
     });
-
 }
