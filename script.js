@@ -30,7 +30,7 @@ if (downloadCVBtn && downloadCVBtn.textContent.includes('Download CV')) {
     downloadCVBtn.addEventListener('click', (e) => {
         e.preventDefault();
         const link = document.createElement('a');
-        link.href = 'cv.pdf';
+        link.href = 'Maithil Tandel CV.pdf';
         link.download = 'Maithil_Tandel_CV.pdf';
         document.body.appendChild(link);
         link.click();
