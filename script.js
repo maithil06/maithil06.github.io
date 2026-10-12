@@ -31,7 +31,7 @@ if (downloadCVBtn && downloadCVBtn.textContent.includes('Download CV')) {
         e.preventDefault();
         const link = document.createElement('a');
         link.href = 'Maithil Tandel CV.pdf';
-        link.download = 'Maithil_Tandel_CV.pdf';
+        link.download = 'Maithil Tandel CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
